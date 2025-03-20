@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const collectionsData = [
   {
@@ -37,10 +38,11 @@ export const Collections = () => {
             key={collection.title}
             className="flex flex-col items-center rounded-t-2xl overflow-hidden"
           >
-            <img
+            <Image
               src={collection.image}
               alt={collection.title}
               className="h-42 w-full object-cover"
+              sizes="25vw"
             />
             <div className="border border-border rounded-b-2xl py-4 w-full text-center">
               <h2 className="text-xl font-semibold">{collection.title}</h2>

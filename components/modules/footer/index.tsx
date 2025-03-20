@@ -108,7 +108,7 @@ export const Footer = () => {
         {/* Logo and description */}
         <div className="flex flex-col items-center mb-8 text-center">
           <div className="text-center mb-4">
-            <Link href="/" className="">
+            <Link href="/" className="" aria-label="Cheese-Co-Logo">
               <HeaderLogo />
             </Link>
           </div>
@@ -144,6 +144,7 @@ export const Footer = () => {
             />
             <button className="rounded-l-none h-10 rounded-r-lg bg-amber-500 hover:bg-amber-600 px-1 py-0">
               <ChevronRight className="h-6 w-5" />
+              <span className="sr-only">subscribe-email-button</span>
             </button>
           </div>
         </div>

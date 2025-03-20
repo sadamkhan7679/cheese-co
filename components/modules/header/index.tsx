@@ -236,7 +236,7 @@ export const Header = () => {
         </Sheet>
 
         {/* Logo */}
-        <Link href="/" className="">
+        <Link href="/" className="" aria-label="Cheese-Co-Logo">
           <HeaderLogo />
         </Link>
         {/*<Link href="/" className="flex items-center">*/}

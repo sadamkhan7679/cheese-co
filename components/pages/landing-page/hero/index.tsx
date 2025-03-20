@@ -11,6 +11,7 @@ export const HeroSection = () => {
         fill
         className="object-cover"
         priority
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 flex items-center">
