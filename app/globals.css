@@ -7,8 +7,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-light: var(--surface-light);
+  --color-dark: var(--dark);
+  --color-background-primary: var(--background-primary);
   /*--font-sans: var(--font-geist-sans);*/
   /*--font-mono: var(--font-geist-mono);*/
+  --color-success: var(--success);
+  --color-grey: var(--grey);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -25,6 +31,7 @@
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
+  --color-border-dark: var(--border-dark);
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
@@ -33,6 +40,7 @@
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-dark: var(--primary-dark);
   --color-primary: var(--primary);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
@@ -42,26 +50,49 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Font families */
+  --font-open-sans: var(--font-open-sans);
+  --font-cocogoose: var(--font-cocogoose);
+  --font-playfair: var(--font-playfair);
+  --font-playfair-variable: var(--font-playfair-variable);
+  --font-bokor: var(--font-bokor);
+
+  /* Font weights */
+  --font-weight-regular: var(--font-weight-regular);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+  --font-weight-extrabold: var(--font-weight-extrabold);
+  --font-weight-black: var(--font-weight-black);
 }
 
 :root {
   --radius: 0.625rem;
+  --surface: #f0f0f0;
+  --surface-light: "#FAFAFA";
   --background: #ffffff;
   --foreground: #1f1f1f;
+  --background-primary: #e6e6e6;
+  --dark: #2b2b2b;
+  --muted: #717171;
   --card: #ffffff;
   --card-foreground: #1f1f1f;
   --popover: #ffffff;
   --popover-foreground: #1f1f1f;
-  --primary: #F0B323;
-  --primary-foreground: #2B2B2B;
-  --secondary: #63B1BC;
-  --secondary-foreground: #FFFFFF;
-  --muted: #f5f5f5;
+  --primary: #f0b323;
+  --primary-dark: #f68e20;
+  --primary-foreground: #2b2b2b;
+  --secondary: #63b1bc;
+  --secondary-foreground: #ffffff;
+  --success: #17c964;
+  --grey: #646464;
   --muted-foreground: #8a8a8a;
   --accent: #f5f5f5;
   --accent-foreground: #2a2a2a;
   --destructive: #d9534f;
-  --border: #eaeaea;
+  --border: #cecece;
+  --border-dark: #717171;
   --input: #eaeaea;
   --ring: #b3b3b3;
   --chart-1: #ff7f50;
@@ -77,6 +108,28 @@
   --sidebar-accent-foreground: #2a2a2a;
   --sidebar-border: #eaeaea;
   --sidebar-ring: #b3b3b3;
+
+  /* Font families */
+  --font-open-sans: "Open Sans", system-ui, sans-serif;
+  --font-cocogoose:
+    var(--font-cocogoose), var(--font-open-sans), "Open Sans", system-ui,
+    sans-serif;
+  --font-playfair:
+    var(--font-playfair), var(--font-open-sans), "Open Sans", system-ui, serif;
+  --font-playfair-variable:
+    var(--font-playfair-variable), var(--font-open-sans), "Open Sans",
+    system-ui, serif;
+  --font-fallback: var(--font-open-sans), "Open Sans", system-ui, sans-serif;
+  --font-bokor:
+    var(--font-bokor), var(--font-open-sans), "Open Sans", system-ui, sans-serif;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 }
 
 @layer base {
@@ -84,6 +137,46 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-dark;
   }
+}
+
+@layer utilities {
+
+  .app-container-w {
+    @apply w-full max-w-7xl mx-auto px-5 md:px-20 lg:px-30;
+  }
+
+  .app-container {
+    @apply w-full max-w-7xl mx-auto px-5 md:px-20 lg:px-30 py-10;
+  }
+
+  .shadow-custom {
+    box-shadow: 0 4px 20px #00000021;
+  }
+}
+
+/* Utility classes for font weights */
+.font-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+
+.font-black {
+  font-weight: var(--font-weight-black);
 }
