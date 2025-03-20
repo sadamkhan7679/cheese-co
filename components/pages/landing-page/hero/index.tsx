@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <section className="relative h-[500px]">
       <Image
-        src="/images/home/hero-bg-image.jpg"
+        src="/images/home/hero-bg-image.webp"
         alt="Hero background"
         fill
         className="object-cover"

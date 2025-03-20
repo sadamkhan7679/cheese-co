@@ -31,7 +31,7 @@ export default function CartSheet() {
       price: 8.0,
       originalPrice: 10.0,
       quantity: 2,
-      image: "/images/home/products/cheese.jpg",
+      image: "/images/home/products/cheese.webp",
       size: "100kg",
     },
     {
@@ -40,7 +40,7 @@ export default function CartSheet() {
       price: 85.99,
       originalPrice: 95.99,
       quantity: 1,
-      image: "/images/home/products/cheese.jpg",
+      image: "/images/home/products/cheese.webp",
     },
     {
       id: "3",
@@ -48,7 +48,7 @@ export default function CartSheet() {
       price: 9.99,
       originalPrice: 9.99,
       quantity: 1,
-      image: "/images/home/products/cheese.jpg",
+      image: "/images/home/products/cheese.webp",
     },
     {
       id: "4",
@@ -56,7 +56,7 @@ export default function CartSheet() {
       price: 9.99,
       originalPrice: 9.99,
       quantity: 1,
-      image: "/images/home/products/cheese.jpg",
+      image: "/images/home/products/cheese.webp",
     },
   ]);
 

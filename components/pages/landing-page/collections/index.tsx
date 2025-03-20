@@ -2,19 +2,19 @@ import { Button } from "@/components/ui/button";
 
 const collectionsData = [
   {
-    image: "/images/home/collections/cheese.png",
+    image: "/images/home/collections/cheese.webp",
     title: "Cheese",
   },
   {
-    image: "/images/home/collections/cheese.png",
+    image: "/images/home/collections/cheese.webp",
     title: "Specialty Foods",
   },
   {
-    image: "/images/home/collections/cheese.png",
+    image: "/images/home/collections/cheese.webp",
     title: "Charcuterie",
   },
   {
-    image: "/images/home/collections/cheese.png",
+    image: "/images/home/collections/cheese.webp",
     title: "Houseware &  Accessories",
   },
 ];

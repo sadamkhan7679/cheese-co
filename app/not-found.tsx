@@ -14,7 +14,7 @@ export default function NotFound() {
 
       <div className="relative w-48 h-48 mb-8">
         <Image
-          src="/images/home/cheese-with-missing-slice.jpeg"
+          src="/images/home/cheese-with-missing-slice.webp"
           alt="Cheese wheel with a slice missing"
           fill
           className="object-contain"

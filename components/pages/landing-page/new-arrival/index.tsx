@@ -25,7 +25,7 @@ export const NewArrival = () => {
         </div>
         <div className="relative aspect-square md:aspect-auto min-h-96">
           <Image
-            src="/images/home/products/new-arrival.gif"
+            src="/images/home/products/new-arrival.webp"
             alt="Munster Fermier cheese"
             fill
             className="object-cover"
