@@ -144,11 +144,11 @@
 @layer utilities {
 
   .app-container-w {
-    @apply w-full max-w-7xl mx-auto px-5 md:px-20 lg:px-30;
+    @apply w-full max-w-7xl mx-auto px-5 md:px-10 lg:px-10;
   }
 
   .app-container {
-    @apply w-full max-w-7xl mx-auto px-5 md:px-20 lg:px-30 py-10;
+    @apply w-full max-w-7xl mx-auto px-5 md:px-10 lg:px-10 py-10;
   }
 
   .shadow-custom {

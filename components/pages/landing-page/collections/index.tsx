@@ -36,13 +36,14 @@ export const Collections = () => {
         {collectionsData.map((collection) => (
           <div
             key={collection.title}
-            className="flex flex-col items-center rounded-t-2xl overflow-hidden"
+            className="flex flex-col items-center rounded-t-2xl overflow-hidden relative h-42 w-full"
           >
             <Image
               src={collection.image}
               alt={collection.title}
               className="h-42 w-full object-cover"
               sizes="25vw"
+              fill
             />
             <div className="border border-border rounded-b-2xl py-4 w-full text-center">
               <h2 className="text-xl font-semibold">{collection.title}</h2>

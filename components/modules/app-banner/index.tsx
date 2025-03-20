@@ -31,7 +31,7 @@ const rewardsData = [
 export const AppBanner = () => {
   return (
     <div className="bg-surface">
-      <div className="app-container py-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 w-full content-center gap-5">
+      <div className="app-container py-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 w-full content-center gap-4">
         {/* App Download Section */}
         <div className="col-span-1 xl:col-span-1 flex items-center gap-4">
           <SmartphoneIcon />
@@ -68,8 +68,8 @@ export const AppBanner = () => {
 
         {/* App Store Buttons */}
         <div className="hidden xl:flex flex-col gap-3">
-          <AppleAppStoreButton />
-          <GooglePlayButton />
+          <AppleAppStoreButton size="small" />
+          <GooglePlayButton size="small" />
         </div>
       </div>
     </div>
