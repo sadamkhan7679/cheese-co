@@ -18,10 +18,10 @@ export const HeroSection = () => {
         <div className="app-container">
           <div className="py-8 md:p-16 flex items-center">
             <div className="bg-white/90 rounded-2xl px-6 py-10 max-w-[560px]">
-              <h2 className="text-primary-dark text-4xl italic mb-2">
+              <h2 className="text-primary-dark font-playfair text-4xl italic mb-2">
                 New Artisanal Cheese
               </h2>
-              <h1 className="font-serif text-4xl md:text-5xl mb-4">
+              <h1 className="font-playfair text-4xl mb-4">
                 Shopping and Tasting Experience in Ambleside
               </h1>
               <Button

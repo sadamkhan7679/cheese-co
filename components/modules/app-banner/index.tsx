@@ -67,7 +67,7 @@ export const AppBanner = () => {
         ))}
 
         {/* App Store Buttons */}
-        <div className="hidden xl:flex flex-col gap-3">
+        <div className="hidden xl:flex flex-col gap-3 items-end">
           <AppleAppStoreButton size="small" />
           <GooglePlayButton size="small" />
         </div>
